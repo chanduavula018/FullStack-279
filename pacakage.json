@@ -1,0 +1,16 @@
+{
+  "name": "student-form",
+  "version": "1.0.0",
+  "description": "Student registration form using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Chandu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "multer": "^1.4.5"
+  }
+}
