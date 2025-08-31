@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form id="studentForm" method="POST" action="http://localhost:3000/register">
+    <h2>Student Registration</h2>
+
+    <!-- Text -->
+    <label>Full Name</label>
+    <input type="text" name="name" required>
+
+    <!-- Email -->
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <!-- Password -->
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <!-- Number -->
+    <label>Age</label>
+    <input type="number" name="age" min="10" max="100" required>
+
+    <!-- Date -->
+    <label>Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <!-- Radio -->
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <!-- Checkbox -->
+    <label>Skills</label>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+
+    <!-- Select -->
+    <label>Course</label>
+    <select name="course" required>
+      <option value="">--Select--</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Data Science">Data Science</option>
+      <option value="AI/ML">AI/ML</option>
+    </select>
+
+    <!-- File -->
+    <label>Upload Resume</label>
+    <input type="file" name="resume" required>
+
+    <!-- Color -->
+    <label>Favorite Color</label>
+    <input type="color" name="color">
+
+    <!-- Range -->
+    <label>Experience (0-10 years)</label>
+    <input type="range" name="experience" min="0" max="10">
+
+    <!-- Textarea -->
+    <label>Address</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="validate.js"></script>
+</body>
+</html>
