@@ -1,0 +1,11 @@
+{
+  "name": "student-form",
+  "lockfileVersion": 2,
+  "dependencies": {
+    "express": {
+      "version": "4.18.2",
+      "resolved": "https://registry.npmjs.org/express/-/express-4.18.2.tgz",
+      "integrity": "sha512-..."
+    }
+  }
+}
